@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../tugas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-family: 'Lato';
+            color: #272D4E;
+        }
+
+        #login_form {
+            box-sizing: border-box;
+            background: #ECF0FD;
+            border-radius: 8px;
+            border: none;
+            height: 450px;
+            margin: 3.2rem auto 8.1rem auto;
+            width: 350px;
+        }
+
+        #login_form .form {
+            padding: 12px 44px;
+        }
+
+        #login_form .form .login_title {
+            letter-spacing: 1px;
+            padding-bottom: 23px;
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #forgot-pass {
+            color: #1362d3;
+            font-family: "Roboto";
+            font-size: 10pt;
+            margin-top: 21px;
+            text-align: right;
+        }
+
+        #signup {
+            position: relative;
+            bottom: 100px;
+        }
+
+        #signup p {
+            text-align: center;
+        }
+
+        #signup a {
+            color: #1362d3;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="login_form">
+        <div class="form">
+            <div class="login_title">
+                <h2>Masuk</h2>
+            </div>
+        </div>
+        <form method="post" class="form">
+            <div class="input">
+                <label for="user-email">Email</label><br>
+                <input id="user-email" class="form-content" type="email" name="email" />
+            </div>
+            <div class="input" style="margin-top:32px;">
+                <label for="user-password">Kata Sandi</label><br>
+                <input id="user-password" class="form-content" type="password" name="password" />
+            </div>
+            <a href="#">
+                <legend id="forgot-pass">Lupa kata sandi ?</legend>
+            </a>
+            <div class="btn">
+                <input class="submit-btn" type="submit" name="submit" value="Masuk" />
+            </div>
+        </form>
+    </div>
+    <div id="signup">
+        <p>
+            Belum punya akun ? <a href="register.html">Daftar.</a>
+        </p>
+    </div>
+
+</body>
+
+</html>

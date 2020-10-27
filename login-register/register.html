@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../tugas.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2 {
+            font-family: 'Lato';
+            color: #272D4E;
+        }
+
+        #register_form {
+            box-sizing: border-box;
+            background: #ECF0FD;
+            border-radius: 8px;
+            border: none;
+            height: 535px;
+            margin: 2.3rem auto 8.1rem auto;
+            width: 350px;
+        }
+
+        #register_form .form {
+            padding: 12px 44px;
+        }
+
+        #register_form .form .register_title {
+            letter-spacing: 1px;
+            padding-bottom: 23px;
+            margin-top: 24px;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #forgot-pass {
+            color: #1362d3;
+            font-family: "Roboto";
+            font-size: 10pt;
+            margin-top: 21px;
+            text-align: right;
+        }
+
+        form.form {
+            align-items: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form.form .input input {
+            width: calc(350px - 150px);
+            background: #fff;
+            padding: 1em 2em;
+            box-shadow: 0 12px 24px rgb(19, 98, 211, 0.1);
+            margin-top: 12px;
+        }
+
+        .form-content {
+            background: #fbfbfb;
+            border: none;
+            outline: none;
+            padding-top: 14px;
+        }
+
+        #submit-btn {
+            background: #1362d3;
+            border: none;
+            border-radius: 21px;
+            box-shadow: 0 24px 34px rgb(19, 98, 211, 0.2);
+            cursor: pointer;
+            color: white;
+            margin-left: calc(350px - 300px);
+            height: 42.3px;
+            margin-top: 42px;
+            transition: 0.3s all ease-in-out;
+            width: 153px;
+            font-size: 16px;
+            font-family: "Lato";
+        }
+
+        #submit-btn:hover {
+            box-shadow: none;
+            background: #fff;
+            color: #1362d3;
+        }
+
+        #login {
+            position: relative;
+            bottom: 100px;
+        }
+
+        #login p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="register_form">
+        <div class="form">
+            <div class="register_title">
+                <h2>Daftar</h2>
+            </div>
+        </div>
+        <form method="post" class="form">
+            <div id="inputNama">
+                <div class="input">
+                    <label for="user-nama">Nama lengkap</label><br>
+                    <input id="user-email" class="form-content" type="email" name="email" />
+                </div>
+                <div class="input" style="margin-top:21px;">
+                    <label for="user-email">Email</label><br>
+                    <input id="user-email" class="form-content" type="email" name="email" />
+                </div>
+            </div>
+            <div class="input_pw">
+                <div class="input" style="margin-top:21px;">
+                    <label for="user-password">Buat kata sandi</label><br>
+                    <input id="user-password" class="form-content" type="password" name="password" />
+                </div>
+                <div class="check" style="margin-top:16px;">
+                    <input type="checkbox" id="agreement" name="agreement" value="Agree">
+                    <label for="agreement" style="font-size:14px;">Agreement</label><br>
+                </div>
+            </div>
+            <div class="btn">
+                <input class="submit-btn" type="submit" name="submit" value="Daftar" />
+            </div>
+        </form>
+    </div>
+    <div id="login">
+        <p>
+            Sudah punya akun ? <a href="login.html">Masuk.</a>
+        </p>
+    </div>
+
+</body>
+<script>
+</script>
+
+</html>

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  </script>
+  <link rel="stylesheet" type="text/css" href="tugas.css" />
+  <title>Tugas MK Web</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav id="navbar">
+      <img src="gambar/logo.png" alt="logo" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimoni">Testimonial</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="btn">
+        <a href="login-register/register.html" target=" _blank"><button id="daftar">Daftar</button></a>
+        <a href="login-register/login.html" target="_blank"><button id="masuk">Masuk</button></a>
+      </div>
+    </nav>
+    <div id="cursor-btn" onclick="cursorBtn()">
+      <a href="#navbar">
+        <img src="gambar/icon/cursor-btn.svg">
+      </a>
+    </div>
+    <div id="home">
+      <div class="home_text">
+        <h1>
+          Membawa kebahagiaan<br />
+          untuk produk anda.
+        </h1>
+        <p>
+          Website,brand visual,ilustrasi, atau animasi, <br />kami membantu
+          anda mewujudkan produk digital anda.
+        </p>
+        <a href="#about"><button id="mulai">Mulai</button></a>
+      </div>
+      <div class="ilustrasi_1">
+        <img src="gambar/ilustrasi/ilustrasi_1.png" alt="ilustrasi 1" />
+      </div>
+    </div>
+    <div id="about">
+      <div class="ilustrasi_2">
+        <img src="gambar/ilustrasi/ilustrasi_2.png" alt="ilustrasi 2" />
+      </div>
+      <div class="about_text">
+        <h1>Siapa kami</h1>
+        <p>
+          <b style="color:#1362d3;">Proona</b> adalah perusahaan yang bergerak
+          di industri<br />
+          digital kreatif dimana kami berkomitmen untuk<br />
+          <b>memberikan sentuhan estetika dalam suatu produk</b><br />
+          yang bisa digunakan oleh banyak orang.
+        </p>
+        <table>
+          <tr>
+            <th>Tahun</th>
+            <th>Total project</th>
+          </tr>
+          <tr>
+            <td>2020</td>
+            <td>140</td>
+          </tr>
+          <tr>
+            <td>2019</td>
+            <td>97</td>
+          </tr>
+          <tr>
+            <td>2018</td>
+            <td>35</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div id="services">
+      <div class="services_title">
+        <h1>
+          Apa yang bisa kami lakukan
+        </h1>
+      </div>
+      <div class="services_menu">
+        <ul>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon1.png" alt="design" />
+              <h3>UI/UX Design</h3>
+              <br />
+              <p>
+                Lo-fi, Hi-fi, Prototype, Wireframe,<br />
+                Userflow, User journey, dll.
+              </p>
+            </div>
+          </li>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon2.png" alt="design" />
+              <h3>Ilustrasi</h3>
+              <br />
+              <p>
+                Ilustrasi 2D, Ilustrasi 3D, Icon,<br />
+                Isometric, Lineart, dll.
+              </p>
+            </div>
+          </li>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon3.png" alt="design" />
+              <h3>Brand visual</h3>
+              <br />
+              <p>
+                Logo, Stationery, Mockup,<br />
+                Brand guidelines, dll.
+              </p>
+            </div>
+          </li>
+        </ul>
+        <ul>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon4.png" alt="design" />
+              <h3>Animasi</h3>
+              <br />
+              <p>
+                Motion graphic, footage<br />
+                video, dll.
+              </p>
+            </div>
+          </li>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon5.png" alt="design" />
+              <h3>Promosi</h3>
+              <br />
+              <p>
+                Poster, Flyer, Banner,<br />
+                Brosur, dll.
+              </p>
+            </div>
+          </li>
+          <li class="menu">
+            <div class="list">
+              <img src="gambar/icon/icon6.png" alt="design" />
+              <h3>Development</h3>
+              <br />
+              <p>
+                Front end, back end, support,<br />
+                maintance, dll.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="projects">
+      <div class="projects_title">
+        <br /><br /><br />
+        <h1>Project yang pernah kami buat</h1>
+      </div>
+      <div>
+        <ul class="kategori">
+          <li class="tab active" data-tab-target="#animasi">Animasi</li>
+          <li class="tab" data-tab-target="#uiux">UI/UX</li>
+          <li class="tab" data-tab-target="#ilustrasi">Ilustrasi</li>
+          <li class="tab" data-tab-target="#brand">Brand Visual</li>
+          <li class="tab" data-tab-target="#promosi">Promosi</li>
+          <li class="tab" data-tab-target="#dev">Development</li>
+        </ul>
+      </div>
+      <div class="kategori_list">
+        <div id="animasi" class="active" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project7.gif" alt="project 1" />
+            <img src="gambar/gambar_project/project8.gif" alt="project 2" />
+          </div>
+          <div class="projects_btn">
+            <a href="https://dribbble.com/arief713" target="_blank"><button>Lihat lebih banyak</button></a>
+          </div>
+        </div>
+        <div id="uiux" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project1.png" alt="project 1" />
+            <img src="gambar/gambar_project/project2.png" alt="project 2" />
+          </div>
+        </div>
+        <div id="ilustrasi" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project3.png" alt="project 1" />
+            <img src="gambar/gambar_project/project4.png" alt="project 2" />
+          </div>
+          <div class="projects_btn">
+            <a href="https://dribbble.com/arief713" target="_blank"><button>Lihat lebih banyak</button></a>
+          </div>
+        </div>
+        <div id="brand" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project5.png" alt="project 1" />
+            <img src="gambar/gambar_project/project6.jpg" alt="project 2" />
+          </div>
+          <div class="projects_btn">
+            <a href="https://dribbble.com/arief713" target="_blank"><button>Lihat lebih banyak</button></a>
+          </div>
+        </div>
+        <div id="promosi" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project1.png" alt="project 1" />
+            <img src="gambar/gambar_project/project2.png" alt="project 2" />
+          </div>
+          <div class="projects_btn">
+            <a href="https://dribbble.com/arief713" target="_blank"><button>Lihat lebih banyak</button></a>
+          </div>
+        </div>
+        <div id="dev" data-tab-content>
+          <div class="projects_img">
+            <img src="gambar/gambar_project/project1.png" alt="project 1" />
+            <img src="gambar/gambar_project/project2.png" alt="project 2" />
+          </div>
+          <div class="projects_btn">
+            <a href="https://dribbble.com/arief713" target="_blank"><button>Lihat lebih banyak</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="testimoni">
+      <div class="testi_title">
+        <h1>Apa yang mereka katakan tentang kami</h1>
+      </div>
+      <div id="testimonial-slider" class="owl-carousel">
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar1.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>4.8</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>Amanda Holmes</h3>
+              <p>
+                " <i>Produk yang saya inginkan akhirnya terwujud. Terima kasih Proona.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar2.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>Richard Brook</h3>
+              <p>
+                " <i>Saya merasa puas dengan produk digital yang saya pesan.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar3.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>5.0</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>John Sumenep</h3>
+              <p>
+                " <i>Saya merasa puas dengan produk digital yang saya pesan.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar4.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>5.0</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>Elisia Lavey</h3>
+              <p>
+                " <i>Saya merasa puas dengan produk digital yang saya pesan.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar5.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>4.9</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>Elizabeth Ningsih</h3>
+              <p>
+                " <i>Saya merasa puas dengan produk digital yang saya pesan.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+        <div class="testi">
+          <div class="testi_avatar">
+            <img src="gambar/avatar/avatar6.png" alt="avatar" />
+            <div class="rating">
+              <img src="gambar/icon/bintang.png" alt="rating">
+              <span>4.8</span>
+            </div>
+          </div>
+          <div class="testi_text">
+            <div class="testi_deskripsi">
+              <h3>Rob Snow</h3>
+              <p>
+                " <i>Saya merasa puas dengan produk digital yang saya pesan.</i>"
+              </p>
+            </div>
+            <div class="testi_icon">
+              <img src="gambar/icon/”.png" alt="petik">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="contact_form">
+        <div class="title">
+          <h1>Hubungi kami</h1>
+          <br />
+          <p>
+            Hubungi kami untuk menanyakan lebih lanjut.
+          </p>
+        </div>
+        <div class="form">
+          <p>Email</p>
+          <input type="text" placeholder="Email" id="email" />
+          <br /><br />
+          <p>Pesan</p>
+          <input type="text" placeholder="Pesan" id="pesan" /><br />
+          <a href="#navbar"><button id="kirim">Kirim</button></a>
+        </div>
+      </div>
+      <div class="contact_img">
+        <img src="gambar/ilustrasi/ilustrasi_3.png" alt="ilustrasi 3" />
+      </div>
+    </div>
+    <div id="footer">
+      <p>Arief Rachman - 19090012 - 3A</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#testimonial-slider").owlCarousel({
+        items: 3,
+        itemsDesktop: [1000, 3],
+        itemsDesktopSmall: [979, 2],
+        itemsTablet: [768, 2],
+        itemsMobile: [650, 1],
+        pagination: true,
+        autoPlay: true
+      });
+    });
+  </script>
+</body>
+
+</html>
