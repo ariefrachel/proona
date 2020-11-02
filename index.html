@@ -6,6 +6,7 @@
     href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
+  <script type="text/javascript" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </script>
   <link rel="stylesheet" type="text/css" href="tugas.css" />
   <title>Tugas MK Web</title>
@@ -397,6 +398,19 @@
         autoPlay: true
       });
     });
+    
+  formContact = document.querySelector('#form-contact');
+  formContact.addEventListener('submit', (e) => {
+    e.preventDefault()
+    let email = document.getElementById('email').value;
+    let pesan = document.getElementById('pesan').value;
+    if (nama != "" && email!="" && pesan !="") {
+      swal("Terimakasih " , "Kritik dan saran anda telah kami terima.", "success");
+    }else{
+      swal("Warning!", "Anda harus melengkapi form diatas dengan lengkap !", "warning");
+    }
+  })
+
   </script>
 </body>
 
