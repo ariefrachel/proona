@@ -369,12 +369,14 @@
           </p>
         </div>
         <div class="form">
-          <p>Email</p>
-          <input type="text" placeholder="Email" id="email" />
-          <br /><br />
-          <p>Pesan</p>
-          <input type="text" placeholder="Pesan" id="pesan" /><br />
-          <a href="#navbar"><button id="kirim">Kirim</button></a>
+          <form action="" id="form-contact">
+            <p>Email</p>
+            <input type="text" placeholder="Email" id="email" />
+            <br /><br />
+            <p>Pesan</p>
+            <input type="text" placeholder="Pesan" id="pesan" /><br />
+            <a href="#navbar"><button id="kirim">Kirim</button></a>
+          </form>
         </div>
       </div>
       <div class="contact_img">
@@ -399,7 +401,7 @@
       });
     });
     
-  formContact = document.querySelector('#contact');
+  formContact = document.querySelector('#form-contact');
   formContact.addEventListener('submit', (e) => {
     e.preventDefault()
     let email = document.getElementById('email').value;
